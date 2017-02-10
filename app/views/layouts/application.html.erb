@@ -9,6 +9,18 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-default">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Tea Shop</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right nav-list">
+        <li><%= link_to "Shop", teas_path %></li>
+        <li><%= link_to "New Tea", teas_path %></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+    <div class="container">
     <%= yield %>
+  </div>
   </body>
 </html>
