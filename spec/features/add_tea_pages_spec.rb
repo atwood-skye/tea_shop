@@ -10,4 +10,10 @@ describe "adding a tea" do
     click_on 'Create Tea'
     expect(page).to have_content 'Earl Grey'
   end
+
+  it "gives error when no name is entered" do
+   visit new_tea_path
+   click_on 'Create Tea'
+   expect(page).to have_content 'errors'
+ end
 end
