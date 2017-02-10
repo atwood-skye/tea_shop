@@ -2,6 +2,9 @@
 
   <h1><%= @tea.name %></h1>
   <button><%= link_to "Edit Tea", edit_tea_path(@tea) %></button>
+  <button><%= link_to "Delete", tea_path(@tea),
+                         :data => {:confirm => "You sure?",
+                           :method => "delete"} %></button
   <hr>
   <p><%= link_to "Back", teas_path %></p>
 </div>

@@ -33,6 +33,12 @@ class TeasController < ApplicationController
     end
   end
 
+  def destroy
+    @tea = Tea.find(params[:id])
+    @tea.destroy
+    redirect_to teas_path
+  end
+
 private
   def tea_params
     params.require(:tea).permit(:name, :cost, :country)
