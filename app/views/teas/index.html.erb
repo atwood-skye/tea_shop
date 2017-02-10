@@ -1,10 +1,10 @@
 <div class="container tea-list">
-
-  <h1>Current Teas</h1>
-
-  <ul>
-    <% @teas.each do |tea| %>
-    <h3><%= link_to tea.name, tea_path(tea) %></h3>
-    <% end %>
-  </ul>
+  <div class="panel panel-default">
+    <div class="panel-heading"><h1>Current Teas</h1></div>
+    <div class="panel-body">  <ul>
+      <% @teas.each do |tea| %>
+      <h3><%= link_to tea.name, tea_path(tea), :style=>'color:#240A02;' %></h3>
+      <% end %>
+    </ul></div>
+  </div>
 </div>

@@ -1,5 +1,8 @@
 <div class="container">
-  <h1>Edit Tea</h1>
-
-<%= render "form" %>
+  <div class="panel panel-default">
+    <div class="panel-heading">  <h1>Edit Tea</h1></div>
+    <div class="panel-body"><%= render "form" %></div>
+    <hr>
+    <p><%= link_to "Back", tea_path(@tea) %></p>
+  </div>
 </div>

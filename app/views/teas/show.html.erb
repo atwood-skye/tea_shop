@@ -1,12 +1,14 @@
 <div class="container">
+<div class="panel panel-default">
 
-  <h1><%= @tea.name %></h1>
-  <h2>Imported From: <%= @tea.country %></h2>
-  <h2>$ <%= @tea.cost %></h2>
+<div class="panel-heading"><h1><%= @tea.name %></h1></div>
+  <div class="panel-body"><h2>Imported From: <%= @tea.country %></h2>
+  <h2>$ <%= @tea.cost %>/oz</h2></div>
   <button><%= link_to "Edit Tea", edit_tea_path(@tea) %></button>
   <button><%= link_to "Delete", tea_path(@tea),
                          :data => {:confirm => "You sure?",
                            :method => "delete"} %></button
   <hr>
   <p><%= link_to "Back", teas_path %></p>
+</div>
 </div>
