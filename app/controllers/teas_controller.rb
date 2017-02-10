@@ -20,6 +20,19 @@ class TeasController < ApplicationController
     end
   end
 
+  def edit
+    @tea = Tea.find(params[:id])
+  end
+
+  def update
+    @tea = Tea.find(params[:id])
+    if @tea.update(tea_params)
+      redirect_to teas_path
+    else
+      render :edit
+    end
+  end
+
 private
   def tea_params
     params.require(:tea).permit(:name, :cost, :country)

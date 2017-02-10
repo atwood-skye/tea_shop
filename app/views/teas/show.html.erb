@@ -1,3 +1,7 @@
-<h1><%= @tea.name %></h1>
+<div class="container">
 
-<p><%= link_to "Return to teas", teas_path %></p>
+  <h1><%= @tea.name %></h1>
+  <button><%= link_to "Edit Tea", edit_tea_path(@tea) %></button>
+  <hr>
+  <p><%= link_to "Back", teas_path %></p>
+</div>
