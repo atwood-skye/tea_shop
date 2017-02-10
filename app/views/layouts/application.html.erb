@@ -8,8 +8,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default navbar-static-top">
       <div class="navbar-header">
         <a class="navbar-brand" href="/">Tea Shop</a>
       </div>
@@ -18,9 +17,10 @@
         <li><%= link_to "New Tea", new_tea_path %></li>
         <li><a href="#">About</a></li>
       </ul>
-    </nav>
-    <div class="container">
-    <%= yield %>
-  </div>
+  </nav>
+  <body>
+    <div class="top-display">
+    </div>
+      <%= yield %>
   </body>
 </html>

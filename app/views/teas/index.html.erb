@@ -1,7 +1,10 @@
-<h1>Current Teas</h1>
+<div class="container tea-list">
 
-<ul>
-  <% @teas.each do |tea| %>
-    <li><%= link_to tea.name, tea_path(tea) %></li>
-  <% end %>
-</ul>
+  <h1>Current Teas</h1>
+
+  <ul>
+    <% @teas.each do |tea| %>
+    <h3><%= link_to tea.name, tea_path(tea) %></h3>
+    <% end %>
+  </ul>
+</div>
