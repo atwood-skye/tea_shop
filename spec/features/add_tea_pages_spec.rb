@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe "adding a tea" do
   it "adds a new tea" do
-    visit teas_path
+    visit '/'
     click_link 'New Tea'
     fill_in 'Name', :with => 'Earl Grey'
     fill_in 'Cost', :with => 4
