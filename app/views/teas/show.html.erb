@@ -1,6 +1,8 @@
 <div class="container">
 
   <h1><%= @tea.name %></h1>
+  <h2>Imported From: <%= @tea.country %></h2>
+  <h2>$ <%= @tea.cost %></h2>
   <button><%= link_to "Edit Tea", edit_tea_path(@tea) %></button>
   <button><%= link_to "Delete", tea_path(@tea),
                          :data => {:confirm => "You sure?",

@@ -2,7 +2,10 @@
 @import "bootstrap";
 
 body {
-  background-color: rgba(21, 39, 4, 0.7);
+  background-color: rgba(21, 39, 4, 0.9);
+  font-family: 'Assistant', sans-serif;
+  color: white;
+  text-align: center;
 }
 
 .navbar, .navbar-default {
@@ -13,6 +16,7 @@ body {
 }
 
 .top-display {
+opacity: 0.8;
 background-image:url("https://images.unsplash.com/photo-1455157823797-3019317cbcf0?dpr=1&auto=format&fit=crop&w=767&h=511&q=80&cs=tinysrgb&crop=");
 background-size: cover;
 background-position: center bottom;
@@ -25,10 +29,18 @@ align-items: center;
 margin-top: -100px;
 }
 
+#welcome-text {
+  font-size: 48px;
+  font-weight: bold;
+}
+
 .container, .tea-listing {
   text-align: center;
   margin-top: 5%;
+  margin-bottom: 5%;
   max-width: 70%;
   max-height: 70%;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #240A02;
+  padding: 1%;
 }
