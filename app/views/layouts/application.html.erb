@@ -18,6 +18,10 @@
         <li><%= link_to "New Tea", new_tea_path %></li>
       </ul>
   </nav>
+  <div class="container-fluid">
+    <%= flash[:notice] %>
+    <%= flash[:alert] %>
+  </div>
   <body>
     <div class="top-display">
     </div>

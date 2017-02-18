@@ -14,8 +14,10 @@ class TeasController < ApplicationController
   def create
     @tea = Tea.new(tea_params)
     if @tea.save
+      flash[:notice] = "Tea successfully added!"
       redirect_to teas_path
     else
+      flash[:alert] = 'There was an issue adding your tea. Please try again.'
       render :new
     end
   end
@@ -27,8 +29,10 @@ class TeasController < ApplicationController
   def update
     @tea = Tea.find(params[:id])
     if @tea.update(tea_params)
+      flash[:notice] = "Tea successfully updated!"
       redirect_to teas_path
     else
+      flash[:alert] = "There was an issue updating this tea. Please try again."
       render :edit
     end
   end
